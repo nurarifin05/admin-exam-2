@@ -197,5 +197,51 @@
       "tag_number": "3242432412121dasda",
       "id_Account": "asdaqwqad12"
     }
+  ],
+  "items": [
+    {
+      "id": "1",
+      "Item_id": "00001",
+      "Item_code": "12384762623322112",
+      "Item_category": "assigment",
+      "Item_Type": "Barang",
+      "SKU": "1234566",
+      "Name": "Muhamad Nur Arifin",
+      "Decription": "ini adalah barang yang digunakan",
+      "Uom": "8234612y1",
+      "Quantity": "123",
+      "tag_number": "04113475933212",
+      "id_Account": "123456"
+    },
+    {
+      "id": "02",
+      "Item_id": "123",
+      "Item_code": "1244",
+      "Item_category": "orang",
+      "Item_Type": "pegawai",
+      "SKU": "1212",
+      "Name": "arifin05",
+      "Decription": "manusia",
+      "Uom": "123",
+      "Quantity": "1",
+      "tag_number": "2134312222312312121",
+      "id_Account": "2341"
+    }
+  ],
+  "Transaction_Receive": [
+    {
+      "id": "01",
+      "Device_ID": "AGL12312",
+      "id_Account": "123456",
+      "id_location": "Surabaya 001",
+      "item_id": "123124",
+      "UoM": "12312wq",
+      "Quantity": "123",
+      "Line_number": "12312",
+      "Rack_number": "333212",
+      "Bin_number": "123132",
+      "Time_Enter": "12:11:01",
+      "status": "aktif"
+    }
   ]
 }

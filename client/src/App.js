@@ -11,7 +11,7 @@ import tag from '@material-ui/icons/Label';
 import logdata from '@material-ui/icons/Storage'
 import employeeicon from '@material-ui/icons/SupervisorAccountOutlined';
 import authProvider from './components/LOGIN/authProvider'
-
+import Dashboard from './components/DASHBOARD/Dashboard'
 
 import PostList from './components/POST/PostList'
 import PostCreate from './components/POST/PostCreate'
@@ -53,13 +53,17 @@ import UserList from './components/USER/UserList'
 import UserCreate from './components/USER/UserCreate'
 import UserEdit from './components/USER/UserEdit'
 
+import ItemsList from './components/ITEMS/ItemsList'
+import ItemsCreate from './components/ITEMS/ItemsCreate'
+import ItemsEdit from './components/ITEMS/ItemsEdit'
 
-
-
+import TransactionReceiveList from './components/TRANSACTION_RECEIVE/TransactionReceiveList'
+import TransactionReceiveCreate from './components/TRANSACTION_RECEIVE/TransactionReceiveCreate'
+import TransactionReceiveEdit from './components/TRANSACTION_RECEIVE/TransactionReceiveEdit'
 
 
 function App() {
-  return <Admin authProvider={authProvider} dataProvider={restProvider('http://localhost:3000')}>
+  return <Admin authProvider={authProvider} dashboard={Dashboard} dataProvider={restProvider('http://localhost:3000')}>
     <Resource 
     name='posts' 
     list={PostList} 
@@ -128,6 +132,20 @@ function App() {
     list={EmployeeList} 
     create={EmployeeCreate} 
     edit={EmployeeEdit} 
+    icon={employeeicon}
+    />
+    <Resource 
+    name='items' 
+    list={ItemsList} 
+    create={ItemsCreate} 
+    edit={ItemsEdit} 
+    icon={employeeicon}
+    />
+    <Resource 
+    name='Transaction_Receive' 
+    list={TransactionReceiveList} 
+    create={TransactionReceiveCreate} 
+    edit={TransactionReceiveEdit} 
     icon={employeeicon}
     />
   </Admin>
